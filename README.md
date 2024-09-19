@@ -5,7 +5,7 @@
 ### Developer
 
 - **Name**: Dominic Minnich
-- **GitHub**: [GitHub Profile URL](https://github.com/DomMinnich)
+- **GitHub**: [DomMinnich](https://github.com/DomMinnich)
 
 **VS-Notes** is a simple and intuitive note-taking extension for Visual Studio Code. It allows users to create, manage, and organize notes directly within the editor. Perfect for developers who need to jot down quick ideas, to-do lists, or project-related information without leaving the VS Code environment. Notes are stored globally, so they can be accessed across all projects in your VS Code environment.
 
