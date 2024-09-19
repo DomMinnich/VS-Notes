@@ -2,18 +2,18 @@
 
 
 {
-  "name": "VS-Notes",
-  "displayName": "VS-Notes",
+  "name": "VS-QuickNotes",
+  "displayName": "VS-QuickNotes",
   "description": "A simple notes extension",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.93.0"
   },
   "publisher": "DominicMinnich", 
-  "icon": "resources/icons/profile.png",
+  "icon": "resources/icons/notes.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/VS-Notes.git" 
+    "url": "https://github.com/DomMinnich/VS-Notes" 
   },
   "categories": [
     "Other"
