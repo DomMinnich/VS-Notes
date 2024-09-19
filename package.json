@@ -5,7 +5,7 @@
   "name": "VS-QuickNotes",
   "displayName": "VS-QuickNotes",
   "description": "A simple notes extension",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.93.0"
   },
@@ -55,11 +55,11 @@
       },
       {
         "command": "VS-Notes.renameNote",
-        "title": "ㅤㅤㅤㅤㅤㅤㅤ🖊ㅤㅤㅤㅤㅤㅤㅤ"
+        "title": "ㅤ 🖊 ㅤ"
       },
       {
         "command": "VS-Notes.deleteNote",
-        "title": "ㅤㅤㅤㅤㅤㅤㅤ 🗙 ㅤㅤㅤㅤㅤㅤㅤ"
+        "title": "ㅤ 🗙 ㅤ"
       }
     ],
     "menus": {
