@@ -1,5 +1,7 @@
 # VS-QuickNotes
 
+https://marketplace.visualstudio.com/items?itemName=DominicMinnich.VS-QuickNotes&ssr=false#review-details
+
 ## First Time Install
 
 If the list does not populate initially after install, please run the following command:
