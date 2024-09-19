@@ -1,0 +1,69 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	"files.exclude": {
+		"out": false // set this to true to hide the "out" folder with the compiled JS files
+	},
+	"search.exclude": {
+		"out": true // set this to false to include "out" folder in search results
+	},
+	// Turn off tsc task auto detection since we have the necessary tasks as npm scripts
+	"typescript.tsc.autoDetect": "off",
+	"workbench.colorCustomizations": {
+		"[Tomorrow Night Blue]": {
+			"activityBar.background": "#00ffaa35",
+			"activityBarBadge.background": "#00b3ff",
+			"activityBarBadge.foreground": "#000000",
+			"activityBar.foreground": "#ffffff",
+			"activityBar.inactiveForeground": "#aeff00",
+			"activityBar.border": "#aeff00",
+			"activityBar.activeBorder": "#ffffff",
+			"activityBar.activeBackground": "#e1ff007b",
+			"editor.background": "#161616",
+			"editorGroup.border": "#aeff00",
+			"editorGroupHeader.tabsBackground": "#00000035",
+			"tab.activeBackground": "#00ffaa82",
+			"tab.activeForeground": "#ffffff",
+			"tab.activeBorder": "#00ffaa",
+			"tab.border": "#ffffff",
+			"tab.inactiveBackground": "#005f417d",
+			"tab.inactiveForeground": "#ffffff",
+			"tab.unfocusedActiveForeground": "#ffffff",
+			"tab.unfocusedActiveBackground": "#00000035",
+			"tab.unfocusedInactiveForeground": "#ffffff",
+			"tab.unfocusedInactiveBackground": "#00000035",
+			"panel.background": "#00000035",
+			"panel.border": "#aeff006d",
+			"panelTitle.activeBorder": "#aeff003a",
+			"panelTitle.activeForeground": "#ffffff",
+			"panelTitle.inactiveForeground": "#ffffff",
+			"sideBar.background": "#00000035",
+			"sideBar.border": "#aeff00",
+			"sideBar.foreground": "#ffffff",
+			"sideBarSectionHeader.background": "#00000035",
+			"statusBar.background": "#00000035",
+			"statusBar.border": "#aeff00",
+			"statusBar.debuggingBackground": "#00000035",
+			"statusBar.debuggingForeground": "#ffffff",
+			"statusBar.debuggingBorder": "#aeff00",
+			"statusBar.foreground": "#ffffff",
+			"statusBar.noFolderBackground": "#00000035",
+			"statusBar.noFolderForeground": "#ffffff",
+			"statusBar.noFolderBorder": "#aeff00",
+			"statusBarItem.activeBackground": "#00000035",
+			"statusBarItem.hoverBackground": "#00000035",
+			"statusBarItem.prominentBackground": "#00000035",
+			"statusBarItem.prominentHoverBackground": "#00000035",
+			"editor.lineHighlightBackground": "#00000000",
+			"editorGroupHeader.noTabsBackground": "#00ffaa70",
+			"editorGroupHeader.border": "#aeff00",
+			"editorGroup.dropBackground": "#aeff00",
+			"titleBar.activeBackground": "#2a2a2a",
+			"menu.background": "#1e1d1d",
+			"menu.selectionBackground": "#aeff0070",
+			"scrollbarSlider.background": "#00ffaa70"
+		},
+		"activityBar.background": "#283109",
+		"titleBar.activeBackground": "#38440C",
+		"titleBar.activeForeground": "#F8FCEC"
+	}
+}

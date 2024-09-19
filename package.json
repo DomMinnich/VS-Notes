@@ -1,0 +1,99 @@
+
+
+
+{
+  "name": "VS-Notes",
+  "displayName": "VS-Notes",
+  "description": "A simple notes extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "publisher": "DominicMinnich", 
+  "icon": "resources/icons/profile.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/VS-Notes.git" 
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:VS-Notes.openNote",
+    "onCommand:VS-Notes.newNote",
+    "onCommand:VS-Notes.renameNote",
+    "onCommand:VS-Notes.deleteNote"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "vs-notes",
+          "title": "VS Notes",
+          "icon": "resources/icons/notes.png"
+        }
+      ]
+    },
+    "views": {
+      "vs-notes": [
+        {
+          "id": "vsNotesView",
+          "name": "Notes",
+          "type": "tree"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "VS-Notes.openNote",
+        "title": "Open Note"
+      },
+      {
+        "command": "VS-Notes.newNote",
+        "title": "Create A New Note"
+      },
+      {
+        "command": "VS-Notes.renameNote",
+        "title": "ㅤㅤㅤㅤㅤㅤㅤ🖊ㅤㅤㅤㅤㅤㅤㅤ"
+      },
+      {
+        "command": "VS-Notes.deleteNote",
+        "title": "ㅤㅤㅤㅤㅤㅤㅤ 🗙 ㅤㅤㅤㅤㅤㅤㅤ"
+      }
+    ],
+    "menus": {
+      "view/item/context": [
+        {
+          "command": "VS-Notes.renameNote",
+          "when": "viewItem == noteItem",
+          "group": "inline"
+        },
+        {
+          "command": "VS-Notes.deleteNote",
+          "when": "viewItem == noteItem",
+          "group": "inline@2"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.4",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
