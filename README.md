@@ -1,5 +1,12 @@
 # VS-QuickNotes
 
+## First Time Install
+
+If the list does not populate initially after install, please run the following command:
+**New Note**: Ctr + Shift + P to bring up the command palette and type "Create A New Note" to create a new note.
+Type in the name of the note you want to create.
+Then everything should work as expected. 👍
+
 ## Developer Information
 
 ### Developer
