@@ -1,4 +1,4 @@
-# VS-Notes
+# VS-QuickNotes
 
 ## Developer Information
 
@@ -7,7 +7,7 @@
 - **Name**: Dominic Minnich
 - **GitHub**: [DomMinnich](https://github.com/DomMinnich)
 
-**VS-Notes** is a simple and intuitive note-taking extension for Visual Studio Code. It allows users to create, manage, and organize notes directly within the editor. Perfect for developers who need to jot down quick ideas, to-do lists, or project-related information without leaving the VS Code environment. Notes are stored globally, so they can be accessed across all projects in your VS Code environment.
+**VS-QuickNotes** is a simple and intuitive note-taking extension for Visual Studio Code. It allows users to create, manage, and organize notes directly within the editor. Perfect for developers who need to jot down quick ideas, to-do lists, or project-related information without leaving the VS Code environment. Notes are stored globally, so they can be accessed across all projects in your VS Code environment.
 
 ## Features
 
@@ -23,11 +23,11 @@
 
 ### Screenshots
 
-Here's how the VS-Notes extension looks in action:
+Here's how the VS-QuickNotes extension looks in action:
 
 #### Activity Bar Panel
 
-![VS-Notes in Activity Bar](images/activityBar.png)
+![VS-QuickNotes in Activity Bar](images/activityBar.png)
 
 #### Creating a New Note
 
@@ -41,15 +41,15 @@ Here's how the VS-Notes extension looks in action:
 
 ## Requirements
 
-VS-Notes does not have any external dependencies. It works out of the box in any VS Code environment, but you should be using VS Code version `1.60.0` or higher to ensure compatibility.
+VS-QuickNotes does not have any external dependencies. It works out of the box in any VS Code environment, but you should be using VS Code version `1.60.0` or higher to ensure compatibility.
 
 ## Extension Settings
 
-VS-Notes does not currently add any additional settings, but future releases may include more customizable options such as note templates or custom note directories.
+VS-QuickNotes does not currently add any additional settings, but future releases may include more customizable options such as note templates or custom note directories.
 
 ## How to Use
 
-1. **Opening the Notes Panel**: Click the VS-Notes icon in the activity bar to open the notes panel.
+1. **Opening the Notes Panel**: Click the VS-QuickNotes icon in the activity bar to open the notes panel.
 2. **Creating a New Note**: Click on the "New Note" button, and you'll be prompted to give the note a name.
 3. **Viewing Notes**: Click on any note from the list to open it in a new tab.
 4. **Renaming Notes**: Right-click on any note and choose the "Rename" option. You will be prompted to enter a new name for the note (the `.txt` extension is handled automatically).
@@ -66,7 +66,7 @@ If you encounter any bugs or have feature requests, feel free to report them via
 
 ### 1.0.0
 
-- Initial release of VS-Notes.
+- Initial release of VS-QuickNotes.
 - Features: Create, rename, and delete notes from the activity bar.
 
 ## Following extension guidelines
@@ -86,4 +86,4 @@ If you’d like to contribute or provide feedback, feel free to open a pull requ
 - [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 - [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy using VS-Notes!**
+**Enjoy using VS-QuickNotes!**
