@@ -20,7 +20,7 @@ Then everything should work as expected. 👍
 
 ## Features
 
-- **Create Notes**: Quickly create new `.txt` notes by clicking the "New Note" button.
+- **Create Notes**: Quickly create new `.txt` notes by clicking the "New Note" button -You could also make a .md by adding `.md` to the end of the note.
 - **Manage Notes**: View, rename, and delete notes directly from the activity bar.
 - **Quick Access**: All notes are accessible from the activity bar, making it easy to switch between your code and notes.
 - **Persistent Notes**: Notes are stored globally, so they can be accessed across all projects in your VS Code environment.
@@ -36,15 +36,15 @@ Here's how the VS-QuickNotes extension looks in action:
 
 #### Activity Bar Panel
 
-![VS-QuickNotes in Activity Bar](images/activityBar.png)
+![VS-QuickNotes in Activity Bar](images/activityBar2.0.png)
 
 #### Creating a New Note
 
-![Create New Note](images/createNote.png)
+![Create New Note](images/createNote2.0.png)
 
-#### Managing Notes (Rename and Delete)
+#### Managing Notes (Rename, Delete, and Pin)
 
-![Managing Notes](images/actions.gif)
+![Managing Notes](images/actions2.0.gif)
 
 > Tip: You can customize the look and behavior of the extension through VS Code's settings.
 
@@ -66,12 +66,22 @@ VS-QuickNotes does not currently add any additional settings, but future release
 
 ## Known Issues
 
-- **No Multi-File Support**: Currently, each note is created as an individual `.txt` file. Future updates may include support for other file types.
+- **No Multi-File Support**: Currently, each note is created as an individual `.txt` or `.md` file. Future updates may include support for other file types.
 - **Cross-System Compatibility**: Notes are stored in the global storage location of VS Code, meaning they're specific to the VS Code environment and not synced across different machines automatically.
 
 If you encounter any bugs or have feature requests, feel free to report them via the GitHub Issues page
 
 ## Release Notes
+
+### 2.0.0
+
+- **Pinned Notes** and a dedicated collapsible panel for them.
+- **Color-coded** pinned notes in green, with normal icons for regular notes.
+- **Collapsible Note Sections** with fun icon switching every few seconds.
+- **Quick Templates**: Create notes pre-populated with certain content (e.g., TODO list, meeting notes, code snippet).
+- **Markdown Preview**: Just create a .md file. VS Code handles the rest.
+- **Global Search**: Search across all .txt and .md notes at once.
+
 
 ### 1.0.0
 
