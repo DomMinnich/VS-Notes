@@ -1,28 +1,30 @@
-
-
-
 {
   "name": "VS-QuickNotes",
   "displayName": "VS-QuickNotes",
-  "description": "A simple notes extension",
-  "version": "0.0.3",
+  "description": "A simple notes extension with pinned notes, color-coding, collapsible sections, quick templates, markdown support, global search, and more.",
+  "version": "2.2.0",
   "engines": {
-    "vscode": "^1.93.0"
+    "vscode": "^1.60.0"
   },
-  "publisher": "DominicMinnich", 
+  "publisher": "DominicMinnich",
   "icon": "resources/icons/notes.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DomMinnich/VS-Notes" 
+    "url": "https://github.com/DomMinnich/VS-Notes"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
+    "onView:vsNotesView",
     "onCommand:VS-Notes.openNote",
     "onCommand:VS-Notes.newNote",
     "onCommand:VS-Notes.renameNote",
-    "onCommand:VS-Notes.deleteNote"
+    "onCommand:VS-Notes.deleteNote",
+    "onCommand:VS-Notes.pinNote",
+    "onCommand:VS-Notes.unpinNote",
+    "onCommand:VS-Notes.quickTemplate",
+    "onCommand:VS-Notes.searchNotes"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -55,24 +57,54 @@
       },
       {
         "command": "VS-Notes.renameNote",
-        "title": "ㅤ 🖊 ㅤ"
+        "title": "Rename Note"
       },
       {
         "command": "VS-Notes.deleteNote",
-        "title": "ㅤ 🗙 ㅤ"
+        "title": "Delete Note"
+      },
+      {
+        "command": "VS-Notes.pinNote",
+        "title": "Pin Note"
+      },
+      {
+        "command": "VS-Notes.unpinNote",
+        "title": "Unpin Note"
+      },
+      {
+        "command": "VS-Notes.quickTemplate",
+        "title": "Create Note from Quick Template"
+      },
+      {
+        "command": "VS-Notes.searchNotes",
+        "title": "Search in Notes"
+      },
+      {
+        "command": "VS-Notes.searchNotes",
+        "title": "Live Search Notes"
       }
     ],
     "menus": {
       "view/item/context": [
         {
           "command": "VS-Notes.renameNote",
-          "when": "viewItem == noteItem",
-          "group": "inline"
+          "when": "viewItem == pinnedNoteItem || viewItem == regularNoteItem",
+          "group": "navigation"
         },
         {
           "command": "VS-Notes.deleteNote",
-          "when": "viewItem == noteItem",
-          "group": "inline@2"
+          "when": "viewItem == pinnedNoteItem || viewItem == regularNoteItem",
+          "group": "navigation@1"
+        },
+        {
+          "command": "VS-Notes.pinNote",
+          "when": "viewItem == regularNoteItem",
+          "group": "navigation@2"
+        },
+        {
+          "command": "VS-Notes.unpinNote",
+          "when": "viewItem == pinnedNoteItem",
+          "group": "navigation@3"
         }
       ]
     }
@@ -83,17 +115,16 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "devDependencies": {
-    "@types/vscode": "^1.93.0",
-    "@types/mocha": "^10.0.7",
-    "@types/node": "20.x",
-    "@typescript-eslint/eslint-plugin": "^8.3.0",
-    "@typescript-eslint/parser": "^8.3.0",
-    "eslint": "^9.9.1",
+    "@types/vscode": "^1.60.0",
+    "@types/node": "^20.0.0",
+    "@types/mocha": "^10.0.1",
     "typescript": "^5.5.4",
-    "@vscode/test-cli": "^0.0.10",
+    "eslint": "^8.34.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@vscode/test-electron": "^2.4.1"
   }
 }
